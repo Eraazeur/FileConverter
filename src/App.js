@@ -4,9 +4,12 @@ import './App.css';
 import Drop from './components/Dropzone';
 
 class App extends Component {
+  
+
   render() {
     return (
       <Drop/>
+      
     );
   }
 }
