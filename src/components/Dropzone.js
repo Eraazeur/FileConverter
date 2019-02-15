@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone'
- 
+
 class Drop extends React.Component {
   constructor() {
     super()
@@ -35,13 +35,16 @@ class Drop extends React.Component {
           {({getRootProps, getInputProps}) => (
             <div {...getRootProps()}>
               <input {...getInputProps()} />
-                <p>Drop files here, or click to select files</p>
+                <p>Drop files here</p>
+                <button>Here</button>
             </div>
           )}
         </Dropzone>
         <aside>
           <h4>Files</h4>
           <ul>{files}</ul>
+
+
         </aside>
       </section>
     );
